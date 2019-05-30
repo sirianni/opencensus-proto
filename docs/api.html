@@ -41,6 +41,7 @@
         width: 100%;
         font-size: 80%;
         border-collapse: collapse;
+        margin-top: 10px;
       }
 
       thead {
@@ -63,57 +64,61 @@
       }
 
       td p:nth-child(1) {
-        text-indent: 0;  
+        text-indent: 0;
       }
 
-       
-      .field-table td:nth-child(1) {  
+      p {
+        margin: 0;
+      }
+
+
+      .field-table td:nth-child(1) {
         width: 10em;
       }
-      .field-table td:nth-child(2) {  
+      .field-table td:nth-child(2) {
         width: 10em;
       }
-      .field-table td:nth-child(3) {  
+      .field-table td:nth-child(3) {
         width: 6em;
       }
-      .field-table td:nth-child(4) {  
+      .field-table td:nth-child(4) {
         width: auto;
       }
 
-       
-      .extension-table td:nth-child(1) {  
+
+      .extension-table td:nth-child(1) {
         width: 10em;
       }
-      .extension-table td:nth-child(2) {  
+      .extension-table td:nth-child(2) {
         width: 10em;
       }
-      .extension-table td:nth-child(3) {  
+      .extension-table td:nth-child(3) {
         width: 10em;
       }
-      .extension-table td:nth-child(4) {  
+      .extension-table td:nth-child(4) {
         width: 5em;
       }
-      .extension-table td:nth-child(5) {  
+      .extension-table td:nth-child(5) {
         width: auto;
       }
 
-       
-      .enum-table td:nth-child(1) {  
+
+      .enum-table td:nth-child(1) {
         width: 10em;
       }
-      .enum-table td:nth-child(2) {  
+      .enum-table td:nth-child(2) {
         width: 10em;
       }
-      .enum-table td:nth-child(3) {  
+      .enum-table td:nth-child(3) {
         width: auto;
       }
 
-       
+
       .scalar-value-types-table tr {
         height: 3em;
       }
 
-       
+
       #toc-container ul {
         list-style-type: none;
         padding-left: 1em;
@@ -124,7 +129,7 @@
         font-weight: bold;
       }
 
-       
+
       .file-heading {
         width: 100%;
         display: table;
@@ -140,7 +145,7 @@
         display: table-cell;
       }
 
-       
+
       .badge {
         width: 1.6em;
         height: 1.6em;
@@ -160,7 +165,7 @@
       }
     </style>
 
-    
+
     <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
   </head>
 
@@ -172,499 +177,499 @@
 
     <div id="toc-container">
       <ul id="toc">
-        
-          
+
+
           <li>
             <a href="#opencensus%2fproto%2fagent%2fcommon%2fv1%2fcommon.proto">opencensus/proto/agent/common/v1/common.proto</a>
             <ul>
-              
+
                 <li>
                   <a href="#opencensus.proto.agent.common.v1.LibraryInfo"><span class="badge">M</span>LibraryInfo</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.agent.common.v1.Node"><span class="badge">M</span>Node</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.agent.common.v1.Node.AttributesEntry"><span class="badge">M</span>Node.AttributesEntry</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.agent.common.v1.ProcessIdentifier"><span class="badge">M</span>ProcessIdentifier</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.agent.common.v1.ServiceInfo"><span class="badge">M</span>ServiceInfo</a>
                 </li>
-              
-              
+
+
                 <li>
                   <a href="#opencensus.proto.agent.common.v1.LibraryInfo.Language"><span class="badge">E</span>LibraryInfo.Language</a>
                 </li>
-              
-              
-              
+
+
+
             </ul>
           </li>
-        
-          
+
+
           <li>
             <a href="#opencensus%2fproto%2fagent%2fmetrics%2fv1%2fmetrics_service.proto">opencensus/proto/agent/metrics/v1/metrics_service.proto</a>
             <ul>
-              
+
                 <li>
                   <a href="#opencensus.proto.agent.metrics.v1.ExportMetricsServiceRequest"><span class="badge">M</span>ExportMetricsServiceRequest</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.agent.metrics.v1.ExportMetricsServiceResponse"><span class="badge">M</span>ExportMetricsServiceResponse</a>
                 </li>
-              
-              
-              
-              
+
+
+
+
                 <li>
                   <a href="#opencensus.proto.agent.metrics.v1.MetricsService"><span class="badge">S</span>MetricsService</a>
                 </li>
-              
+
             </ul>
           </li>
-        
-          
+
+
           <li>
             <a href="#opencensus%2fproto%2fagent%2ftrace%2fv1%2ftrace_service.proto">opencensus/proto/agent/trace/v1/trace_service.proto</a>
             <ul>
-              
+
                 <li>
                   <a href="#opencensus.proto.agent.trace.v1.CurrentLibraryConfig"><span class="badge">M</span>CurrentLibraryConfig</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.agent.trace.v1.ExportTraceServiceRequest"><span class="badge">M</span>ExportTraceServiceRequest</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.agent.trace.v1.ExportTraceServiceResponse"><span class="badge">M</span>ExportTraceServiceResponse</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.agent.trace.v1.UpdatedLibraryConfig"><span class="badge">M</span>UpdatedLibraryConfig</a>
                 </li>
-              
-              
-              
-              
+
+
+
+
                 <li>
                   <a href="#opencensus.proto.agent.trace.v1.TraceService"><span class="badge">S</span>TraceService</a>
                 </li>
-              
+
             </ul>
           </li>
-        
-          
+
+
           <li>
             <a href="#opencensus%2fproto%2fmetrics%2fv1%2fmetrics.proto">opencensus/proto/metrics/v1/metrics.proto</a>
             <ul>
-              
+
                 <li>
                   <a href="#opencensus.proto.metrics.v1.DistributionValue"><span class="badge">M</span>DistributionValue</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.metrics.v1.DistributionValue.Bucket"><span class="badge">M</span>DistributionValue.Bucket</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.metrics.v1.DistributionValue.BucketOptions"><span class="badge">M</span>DistributionValue.BucketOptions</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.metrics.v1.DistributionValue.BucketOptions.Explicit"><span class="badge">M</span>DistributionValue.BucketOptions.Explicit</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.metrics.v1.DistributionValue.Exemplar"><span class="badge">M</span>DistributionValue.Exemplar</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.metrics.v1.DistributionValue.Exemplar.AttachmentsEntry"><span class="badge">M</span>DistributionValue.Exemplar.AttachmentsEntry</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.metrics.v1.LabelKey"><span class="badge">M</span>LabelKey</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.metrics.v1.LabelValue"><span class="badge">M</span>LabelValue</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.metrics.v1.Metric"><span class="badge">M</span>Metric</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.metrics.v1.MetricDescriptor"><span class="badge">M</span>MetricDescriptor</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.metrics.v1.Point"><span class="badge">M</span>Point</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.metrics.v1.SummaryValue"><span class="badge">M</span>SummaryValue</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.metrics.v1.SummaryValue.Snapshot"><span class="badge">M</span>SummaryValue.Snapshot</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.metrics.v1.SummaryValue.Snapshot.ValueAtPercentile"><span class="badge">M</span>SummaryValue.Snapshot.ValueAtPercentile</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.metrics.v1.TimeSeries"><span class="badge">M</span>TimeSeries</a>
                 </li>
-              
-              
+
+
                 <li>
                   <a href="#opencensus.proto.metrics.v1.MetricDescriptor.Type"><span class="badge">E</span>MetricDescriptor.Type</a>
                 </li>
-              
-              
-              
+
+
+
             </ul>
           </li>
-        
-          
+
+
           <li>
             <a href="#opencensus%2fproto%2fresource%2fv1%2fresource.proto">opencensus/proto/resource/v1/resource.proto</a>
             <ul>
-              
+
                 <li>
                   <a href="#opencensus.proto.resource.v1.Resource"><span class="badge">M</span>Resource</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.resource.v1.Resource.LabelsEntry"><span class="badge">M</span>Resource.LabelsEntry</a>
                 </li>
-              
-              
-              
-              
+
+
+
+
             </ul>
           </li>
-        
-          
+
+
           <li>
             <a href="#opencensus%2fproto%2fstats%2fv1%2fstats.proto">opencensus/proto/stats/v1/stats.proto</a>
             <ul>
-              
+
                 <li>
                   <a href="#opencensus.proto.stats.v1.CountAggregation"><span class="badge">M</span>CountAggregation</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.stats.v1.DistributionAggregation"><span class="badge">M</span>DistributionAggregation</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.stats.v1.LastValueAggregation"><span class="badge">M</span>LastValueAggregation</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.stats.v1.Measure"><span class="badge">M</span>Measure</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.stats.v1.Measurement"><span class="badge">M</span>Measurement</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.stats.v1.SumAggregation"><span class="badge">M</span>SumAggregation</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.stats.v1.Tag"><span class="badge">M</span>Tag</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.stats.v1.View"><span class="badge">M</span>View</a>
                 </li>
-              
-              
+
+
                 <li>
                   <a href="#opencensus.proto.stats.v1.Measure.Type"><span class="badge">E</span>Measure.Type</a>
                 </li>
-              
-              
-              
+
+
+
             </ul>
           </li>
-        
-          
+
+
           <li>
             <a href="#opencensus%2fproto%2ftrace%2fv1%2ftrace_config.proto">opencensus/proto/trace/v1/trace_config.proto</a>
             <ul>
-              
+
                 <li>
                   <a href="#opencensus.proto.trace.v1.ConstantSampler"><span class="badge">M</span>ConstantSampler</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.trace.v1.ProbabilitySampler"><span class="badge">M</span>ProbabilitySampler</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.trace.v1.RateLimitingSampler"><span class="badge">M</span>RateLimitingSampler</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.trace.v1.TraceConfig"><span class="badge">M</span>TraceConfig</a>
                 </li>
-              
-              
+
+
                 <li>
                   <a href="#opencensus.proto.trace.v1.ConstantSampler.ConstantDecision"><span class="badge">E</span>ConstantSampler.ConstantDecision</a>
                 </li>
-              
-              
-              
+
+
+
             </ul>
           </li>
-        
-          
+
+
           <li>
             <a href="#opencensus%2fproto%2ftrace%2fv1%2ftrace.proto">opencensus/proto/trace/v1/trace.proto</a>
             <ul>
-              
+
                 <li>
                   <a href="#opencensus.proto.trace.v1.AttributeValue"><span class="badge">M</span>AttributeValue</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.trace.v1.Module"><span class="badge">M</span>Module</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.trace.v1.Span"><span class="badge">M</span>Span</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.trace.v1.Span.Attributes"><span class="badge">M</span>Span.Attributes</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.trace.v1.Span.Attributes.AttributeMapEntry"><span class="badge">M</span>Span.Attributes.AttributeMapEntry</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.trace.v1.Span.Link"><span class="badge">M</span>Span.Link</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.trace.v1.Span.Links"><span class="badge">M</span>Span.Links</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.trace.v1.Span.TimeEvent"><span class="badge">M</span>Span.TimeEvent</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.trace.v1.Span.TimeEvent.Annotation"><span class="badge">M</span>Span.TimeEvent.Annotation</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.trace.v1.Span.TimeEvent.MessageEvent"><span class="badge">M</span>Span.TimeEvent.MessageEvent</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.trace.v1.Span.TimeEvents"><span class="badge">M</span>Span.TimeEvents</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.trace.v1.Span.Tracestate"><span class="badge">M</span>Span.Tracestate</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.trace.v1.Span.Tracestate.Entry"><span class="badge">M</span>Span.Tracestate.Entry</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.trace.v1.StackTrace"><span class="badge">M</span>StackTrace</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.trace.v1.StackTrace.StackFrame"><span class="badge">M</span>StackTrace.StackFrame</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.trace.v1.StackTrace.StackFrames"><span class="badge">M</span>StackTrace.StackFrames</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.trace.v1.Status"><span class="badge">M</span>Status</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.trace.v1.TruncatableString"><span class="badge">M</span>TruncatableString</a>
                 </li>
-              
-              
+
+
                 <li>
                   <a href="#opencensus.proto.trace.v1.Span.Link.Type"><span class="badge">E</span>Span.Link.Type</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.trace.v1.Span.SpanKind"><span class="badge">E</span>Span.SpanKind</a>
                 </li>
-              
+
                 <li>
                   <a href="#opencensus.proto.trace.v1.Span.TimeEvent.MessageEvent.Type"><span class="badge">E</span>Span.TimeEvent.MessageEvent.Type</a>
                 </li>
-              
-              
-              
+
+
+
             </ul>
           </li>
-        
+
         <li><a href="#scalar-value-types">Scalar Value Types</a></li>
       </ul>
     </div>
 
-    
-      
+
+
       <div class="file-heading">
         <h2 id="opencensus/proto/agent/common/v1/common.proto">opencensus/proto/agent/common/v1/common.proto</h2><a href="#title">Top</a>
       </div>
       <p></p>
 
-      
+
         <h3 id="opencensus.proto.agent.common.v1.LibraryInfo">LibraryInfo</h3>
         <p>Information on OpenCensus Library.</p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>language</td>
                   <td><a href="#opencensus.proto.agent.common.v1.LibraryInfo.Language">LibraryInfo.Language</a></td>
                   <td></td>
                   <td><p>Language of OpenCensus Library. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>exporter_version</td>
                   <td><a href="#string">string</a></td>
                   <td></td>
                   <td><p>Version of Agent exporter of Library. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>core_library_version</td>
                   <td><a href="#string">string</a></td>
                   <td></td>
                   <td><p>Version of OpenCensus Library. </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
+
+
+
         <h3 id="opencensus.proto.agent.common.v1.Node">Node</h3>
         <p>Identifier metadata of the Node that produces the span or tracing data.</p><p>Note, this is not the metadata about the Node or service that is described by associated spans.</p><p>In the future we plan to extend the identifier proto definition to support</p><p>additional information (e.g cloud id, etc.)</p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>identifier</td>
                   <td><a href="#opencensus.proto.agent.common.v1.ProcessIdentifier">ProcessIdentifier</a></td>
                   <td></td>
                   <td><p>Identifier that uniquely identifies a process within a VM/container. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>library_info</td>
                   <td><a href="#opencensus.proto.agent.common.v1.LibraryInfo">LibraryInfo</a></td>
                   <td></td>
                   <td><p>Information on the OpenCensus Library that initiates the stream. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>service_info</td>
                   <td><a href="#opencensus.proto.agent.common.v1.ServiceInfo">ServiceInfo</a></td>
                   <td></td>
                   <td><p>Additional information on service. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>attributes</td>
                   <td><a href="#opencensus.proto.agent.common.v1.Node.AttributesEntry">Node.AttributesEntry</a></td>
                   <td>repeated</td>
                   <td><p>Additional attributes. </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
+
+
+
         <h3 id="opencensus.proto.agent.common.v1.Node.AttributesEntry">Node.AttributesEntry</h3>
         <p></p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>key</td>
                   <td><a href="#string">string</a></td>
                   <td></td>
                   <td><p> </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>value</td>
                   <td><a href="#string">string</a></td>
                   <td></td>
                   <td><p> </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
+
+
+
         <h3 id="opencensus.proto.agent.common.v1.ProcessIdentifier">ProcessIdentifier</h3>
         <p>Identifier that uniquely identifies a process within a VM/container.</p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>host_name</td>
                   <td><a href="#string">string</a></td>
@@ -672,54 +677,54 @@
                   <td><p>The host name. Usually refers to the machine/container name.
 For example: os.Hostname() in Go, socket.gethostname() in Python. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>pid</td>
                   <td><a href="#uint32">uint32</a></td>
                   <td></td>
                   <td><p>Process id. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>start_timestamp</td>
                   <td><a href="#google.protobuf.Timestamp">google.protobuf.Timestamp</a></td>
                   <td></td>
                   <td><p>Start time of this ProcessIdentifier. Represented in epoch time. </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
+
+
+
         <h3 id="opencensus.proto.agent.common.v1.ServiceInfo">ServiceInfo</h3>
         <p>Additional service information.</p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>name</td>
                   <td><a href="#string">string</a></td>
                   <td></td>
                   <td><p>Name of the service. </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
 
-      
+
+
+
+
         <h3 id="opencensus.proto.agent.common.v1.LibraryInfo.Language">LibraryInfo.Language</h3>
         <p></p>
         <table class="enum-table">
@@ -727,98 +732,98 @@ For example: os.Hostname() in Go, socket.gethostname() in Python. </p></td>
             <tr><td>Name</td><td>Number</td><td>Description</td></tr>
           </thead>
           <tbody>
-            
+
               <tr>
                 <td>LANGUAGE_UNSPECIFIED</td>
                 <td>0</td>
                 <td><p></p></td>
               </tr>
-            
+
               <tr>
                 <td>CPP</td>
                 <td>1</td>
                 <td><p></p></td>
               </tr>
-            
+
               <tr>
                 <td>C_SHARP</td>
                 <td>2</td>
                 <td><p></p></td>
               </tr>
-            
+
               <tr>
                 <td>ERLANG</td>
                 <td>3</td>
                 <td><p></p></td>
               </tr>
-            
+
               <tr>
                 <td>GO_LANG</td>
                 <td>4</td>
                 <td><p></p></td>
               </tr>
-            
+
               <tr>
                 <td>JAVA</td>
                 <td>5</td>
                 <td><p></p></td>
               </tr>
-            
+
               <tr>
                 <td>NODE_JS</td>
                 <td>6</td>
                 <td><p></p></td>
               </tr>
-            
+
               <tr>
                 <td>PHP</td>
                 <td>7</td>
                 <td><p></p></td>
               </tr>
-            
+
               <tr>
                 <td>PYTHON</td>
                 <td>8</td>
                 <td><p></p></td>
               </tr>
-            
+
               <tr>
                 <td>RUBY</td>
                 <td>9</td>
                 <td><p></p></td>
               </tr>
-            
+
               <tr>
                 <td>WEB_JS</td>
                 <td>10</td>
                 <td><p></p></td>
               </tr>
-            
+
           </tbody>
         </table>
-      
 
-      
 
-      
-    
-      
+
+
+
+
+
       <div class="file-heading">
         <h2 id="opencensus/proto/agent/metrics/v1/metrics_service.proto">opencensus/proto/agent/metrics/v1/metrics_service.proto</h2><a href="#title">Top</a>
       </div>
       <p></p>
 
-      
+
         <h3 id="opencensus.proto.agent.metrics.v1.ExportMetricsServiceRequest">ExportMetricsServiceRequest</h3>
         <p></p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>node</td>
                   <td><a href="#opencensus.proto.agent.common.v1.Node">opencensus.proto.agent.common.v1.Node</a></td>
@@ -827,14 +832,14 @@ For example: os.Hostname() in Go, socket.gethostname() in Python. </p></td>
 previous sent ExportMetricsServiceRequest message has a different Node (e.g.
 when the same RPC is used to send Metrics from multiple Applications). </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>metrics</td>
                   <td><a href="#opencensus.proto.metrics.v1.Metric">opencensus.proto.metrics.v1.Metric</a></td>
                   <td>repeated</td>
                   <td><p>A list of metrics that belong to the last received Node. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>resource</td>
                   <td><a href="#opencensus.proto.resource.v1.Resource">opencensus.proto.resource.v1.Resource</a></td>
@@ -845,27 +850,27 @@ If unset, the most recently set resource in the RPC stream applies. It is
 valid to never be set within a stream, e.g. when no resource info is known
 at all or when all sent metrics have an explicit resource set. </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
+
+
+
         <h3 id="opencensus.proto.agent.metrics.v1.ExportMetricsServiceResponse">ExportMetricsServiceResponse</h3>
         <p></p>
 
-        
 
-        
-      
 
-      
 
-      
 
-      
+
+
+
+
+
+
         <h3 id="opencensus.proto.agent.metrics.v1.MetricsService">MetricsService</h3>
         <p>Service that can be used to push metrics between one Application</p><p>instrumented with OpenCensus and an agent, or between an agent and a</p><p>central collector.</p>
         <table class="enum-table">
@@ -873,7 +878,7 @@ at all or when all sent metrics have an explicit resource set. </p></td>
             <tr><td>Method Name</td><td>Request Type</td><td>Response Type</td><td>Description</td></tr>
           </thead>
           <tbody>
-            
+
               <tr>
                 <td>Export</td>
                 <td><a href="#opencensus.proto.agent.metrics.v1.ExportMetricsServiceRequest">ExportMetricsServiceRequest</a> stream</td>
@@ -881,29 +886,29 @@ at all or when all sent metrics have an explicit resource set. </p></td>
                 <td><p>For performance reasons, it is recommended to keep this RPC
 alive for the entire life of the application.</p></td>
               </tr>
-            
+
           </tbody>
         </table>
 
-        
-    
-      
+
+
+
       <div class="file-heading">
         <h2 id="opencensus/proto/agent/trace/v1/trace_service.proto">opencensus/proto/agent/trace/v1/trace_service.proto</h2><a href="#title">Top</a>
       </div>
       <p></p>
 
-      
+
         <h3 id="opencensus.proto.agent.trace.v1.CurrentLibraryConfig">CurrentLibraryConfig</h3>
         <p></p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>node</td>
                   <td><a href="#opencensus.proto.agent.common.v1.Node">opencensus.proto.agent.common.v1.Node</a></td>
@@ -912,31 +917,31 @@ alive for the entire life of the application.</p></td>
 previous sent CurrentLibraryConfig message has a different Node (e.g.
 when the same RPC is used to configure multiple Applications). </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>config</td>
                   <td><a href="#opencensus.proto.trace.v1.TraceConfig">opencensus.proto.trace.v1.TraceConfig</a></td>
                   <td></td>
                   <td><p>Current configuration. </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
+
+
+
         <h3 id="opencensus.proto.agent.trace.v1.ExportTraceServiceRequest">ExportTraceServiceRequest</h3>
         <p></p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>node</td>
                   <td><a href="#opencensus.proto.agent.common.v1.Node">opencensus.proto.agent.common.v1.Node</a></td>
@@ -945,14 +950,14 @@ when the same RPC is used to configure multiple Applications). </p></td>
 previous sent ExportTraceServiceRequest message has a different Node (e.g.
 when the same RPC is used to send Spans from multiple Applications). </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>spans</td>
                   <td><a href="#opencensus.proto.trace.v1.Span">opencensus.proto.trace.v1.Span</a></td>
                   <td>repeated</td>
                   <td><p>A list of Spans that belong to the last received Node. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>resource</td>
                   <td><a href="#opencensus.proto.resource.v1.Resource">opencensus.proto.resource.v1.Resource</a></td>
@@ -962,31 +967,31 @@ resource set.
 If unset, the most recently set resource in the RPC stream applies. It is
 valid to never be set within a stream, e.g. when no resource info is known. </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
+
+
+
         <h3 id="opencensus.proto.agent.trace.v1.ExportTraceServiceResponse">ExportTraceServiceResponse</h3>
         <p></p>
 
-        
 
-        
-      
+
+
+
         <h3 id="opencensus.proto.agent.trace.v1.UpdatedLibraryConfig">UpdatedLibraryConfig</h3>
         <p></p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>node</td>
                   <td><a href="#opencensus.proto.agent.common.v1.Node">opencensus.proto.agent.common.v1.Node</a></td>
@@ -995,27 +1000,27 @@ valid to never be set within a stream, e.g. when no resource info is known. </p>
 This is required only in the first message on the stream or if the
 previous sent UpdatedLibraryConfig message has a different Node. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>config</td>
                   <td><a href="#opencensus.proto.trace.v1.TraceConfig">opencensus.proto.trace.v1.TraceConfig</a></td>
                   <td></td>
                   <td><p>Requested updated configuration. </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
 
-      
 
-      
 
-      
+
+
+
+
+
+
         <h3 id="opencensus.proto.agent.trace.v1.TraceService">TraceService</h3>
         <p>Service that can be used to push spans and configs between one Application</p><p>instrumented with OpenCensus and an agent, or between an agent and a</p><p>central collector or config service (in this case spans and configs are</p><p>sent/received to/from multiple Applications).</p>
         <table class="enum-table">
@@ -1023,7 +1028,7 @@ previous sent UpdatedLibraryConfig message has a different Node. </p></td>
             <tr><td>Method Name</td><td>Request Type</td><td>Response Type</td><td>Description</td></tr>
           </thead>
           <tbody>
-            
+
               <tr>
                 <td>Config</td>
                 <td><a href="#opencensus.proto.agent.trace.v1.CurrentLibraryConfig">CurrentLibraryConfig</a> stream</td>
@@ -1032,7 +1037,7 @@ previous sent UpdatedLibraryConfig message has a different Node. </p></td>
 the application. The agent pushes configs down to applications via a
 stream.</p></td>
               </tr>
-            
+
               <tr>
                 <td>Export</td>
                 <td><a href="#opencensus.proto.agent.trace.v1.ExportTraceServiceRequest">ExportTraceServiceRequest</a> stream</td>
@@ -1040,29 +1045,29 @@ stream.</p></td>
                 <td><p>For performance reasons, it is recommended to keep this RPC
 alive for the entire life of the application.</p></td>
               </tr>
-            
+
           </tbody>
         </table>
 
-        
-    
-      
+
+
+
       <div class="file-heading">
         <h2 id="opencensus/proto/metrics/v1/metrics.proto">opencensus/proto/metrics/v1/metrics.proto</h2><a href="#title">Top</a>
       </div>
       <p></p>
 
-      
+
         <h3 id="opencensus.proto.metrics.v1.DistributionValue">DistributionValue</h3>
         <p>Distribution contains summary statistics for a population of values. It</p><p>optionally contains a histogram representing the distribution of those</p><p>values across a set of buckets.</p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>count</td>
                   <td><a href="#int64">int64</a></td>
@@ -1071,7 +1076,7 @@ alive for the entire life of the application.</p></td>
 must equal the sum of the values in bucket_counts if a histogram is
 provided. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>sum</td>
                   <td><a href="#double">double</a></td>
@@ -1079,7 +1084,7 @@ provided. </p></td>
                   <td><p>The sum of the values in the population. If count is zero then this field
 must be zero. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>sum_of_squared_deviation</td>
                   <td><a href="#double">double</a></td>
@@ -1094,7 +1099,7 @@ describes Welford&#39;s method for accumulating this sum in one pass.
 
 If count is zero then this field must be zero. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>bucket_options</td>
                   <td><a href="#opencensus.proto.metrics.v1.DistributionValue.BucketOptions">DistributionValue.BucketOptions</a></td>
@@ -1104,7 +1109,7 @@ support this.
 TODO(issue #152): consider not required to send bucket options for
 optimization. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>buckets</td>
                   <td><a href="#opencensus.proto.metrics.v1.DistributionValue.Bucket">DistributionValue.Bucket</a></td>
@@ -1113,24 +1118,24 @@ optimization. </p></td>
 If there is a histogram, then the sum of the values in the Bucket counts
 must equal the value in the count field of the distribution. </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
+
+
+
         <h3 id="opencensus.proto.metrics.v1.DistributionValue.Bucket">DistributionValue.Bucket</h3>
         <p></p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>count</td>
                   <td><a href="#int64">int64</a></td>
@@ -1138,79 +1143,79 @@ must equal the value in the count field of the distribution. </p></td>
                   <td><p>The number of values in each bucket of the histogram, as described in
 bucket_bounds. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>exemplar</td>
                   <td><a href="#opencensus.proto.metrics.v1.DistributionValue.Exemplar">DistributionValue.Exemplar</a></td>
                   <td></td>
                   <td><p>If the distribution does not have a histogram, then omit this field. </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
+
+
+
         <h3 id="opencensus.proto.metrics.v1.DistributionValue.BucketOptions">DistributionValue.BucketOptions</h3>
         <p>A Distribution may optionally contain a histogram of the values in the</p><p>population. The bucket boundaries for that histogram are described by</p><p>BucketOptions.</p><p>If bucket_options has no type, then there is no histogram associated with</p><p>the Distribution.</p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>explicit</td>
                   <td><a href="#opencensus.proto.metrics.v1.DistributionValue.BucketOptions.Explicit">DistributionValue.BucketOptions.Explicit</a></td>
                   <td></td>
                   <td><p>Bucket with explicit bounds. </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
+
+
+
         <h3 id="opencensus.proto.metrics.v1.DistributionValue.BucketOptions.Explicit">DistributionValue.BucketOptions.Explicit</h3>
         <p>Specifies a set of buckets with arbitrary upper-bounds.</p><p>This defines size(bounds) + 1 (= N) buckets. The boundaries for bucket</p><p>index i are:</p><p>[0, bucket_bounds[i]) for i == 0</p><p>[bucket_bounds[i-1], bucket_bounds[i]) for 0 < i < N-1</p><p>[bucket_bounds[i], +infinity) for i == N-1</p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>bounds</td>
                   <td><a href="#double">double</a></td>
                   <td>repeated</td>
                   <td><p>The values must be strictly increasing and &gt; 0. </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
+
+
+
         <h3 id="opencensus.proto.metrics.v1.DistributionValue.Exemplar">DistributionValue.Exemplar</h3>
         <p>Exemplars are example points that may be used to annotate aggregated</p><p>Distribution values. They are metadata that gives information about a</p><p>particular value added to a Distribution bucket.</p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>value</td>
                   <td><a href="#double">double</a></td>
@@ -1218,107 +1223,107 @@ bucket_bounds. </p></td>
                   <td><p>Value of the exemplar point. It determines which bucket the exemplar
 belongs to. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>timestamp</td>
                   <td><a href="#google.protobuf.Timestamp">google.protobuf.Timestamp</a></td>
                   <td></td>
                   <td><p>The observation (sampling) time of the above value. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>attachments</td>
                   <td><a href="#opencensus.proto.metrics.v1.DistributionValue.Exemplar.AttachmentsEntry">DistributionValue.Exemplar.AttachmentsEntry</a></td>
                   <td>repeated</td>
                   <td><p>Contextual information about the example value. </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
+
+
+
         <h3 id="opencensus.proto.metrics.v1.DistributionValue.Exemplar.AttachmentsEntry">DistributionValue.Exemplar.AttachmentsEntry</h3>
         <p></p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>key</td>
                   <td><a href="#string">string</a></td>
                   <td></td>
                   <td><p> </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>value</td>
                   <td><a href="#string">string</a></td>
                   <td></td>
                   <td><p> </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
+
+
+
         <h3 id="opencensus.proto.metrics.v1.LabelKey">LabelKey</h3>
         <p>Defines a label key associated with a metric descriptor.</p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>key</td>
                   <td><a href="#string">string</a></td>
                   <td></td>
                   <td><p>The key for the label. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>description</td>
                   <td><a href="#string">string</a></td>
                   <td></td>
                   <td><p>A human-readable description of what this label key represents. </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
+
+
+
         <h3 id="opencensus.proto.metrics.v1.LabelValue">LabelValue</h3>
         <p></p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>value</td>
                   <td><a href="#string">string</a></td>
                   <td></td>
                   <td><p>The value for the label. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>has_value</td>
                   <td><a href="#bool">bool</a></td>
@@ -1326,24 +1331,24 @@ belongs to. </p></td>
                   <td><p>If false the value field is ignored and considered not set.
 This is used to differentiate a missing label from an empty string. </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
+
+
+
         <h3 id="opencensus.proto.metrics.v1.Metric">Metric</h3>
         <p>Defines a Metric which has one or more timeseries.</p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>metric_descriptor</td>
                   <td><a href="#opencensus.proto.metrics.v1.MetricDescriptor">MetricDescriptor</a></td>
@@ -1352,7 +1357,7 @@ This is used to differentiate a missing label from an empty string. </p></td>
 TODO(issue #152): consider only sending the name of descriptor for
 optimization. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>timeseries</td>
                   <td><a href="#opencensus.proto.metrics.v1.TimeSeries">TimeSeries</a></td>
@@ -1360,7 +1365,7 @@ optimization. </p></td>
                   <td><p>One or more timeseries for a single metric, where each timeseries has
 one or more points. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>resource</td>
                   <td><a href="#opencensus.proto.resource.v1.Resource">opencensus.proto.resource.v1.Resource</a></td>
@@ -1368,38 +1373,38 @@ one or more points. </p></td>
                   <td><p>The resource for the metric. If unset, it may be set to a default value
 provided for a sequence of messages in an RPC stream. </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
+
+
+
         <h3 id="opencensus.proto.metrics.v1.MetricDescriptor">MetricDescriptor</h3>
         <p>Defines a metric type and its schema.</p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>name</td>
                   <td><a href="#string">string</a></td>
                   <td></td>
                   <td><p>The metric type, including its DNS name prefix. It must be unique. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>description</td>
                   <td><a href="#string">string</a></td>
                   <td></td>
                   <td><p>A detailed description of the metric, which can be used in documentation. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>unit</td>
                   <td><a href="#string">string</a></td>
@@ -1407,38 +1412,38 @@ provided for a sequence of messages in an RPC stream. </p></td>
                   <td><p>The unit in which the metric value is reported. Follows the format
 described by http://unitsofmeasure.org/ucum.html. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>type</td>
                   <td><a href="#opencensus.proto.metrics.v1.MetricDescriptor.Type">MetricDescriptor.Type</a></td>
                   <td></td>
                   <td><p> </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>label_keys</td>
                   <td><a href="#opencensus.proto.metrics.v1.LabelKey">LabelKey</a></td>
                   <td>repeated</td>
                   <td><p>The label keys associated with the metric descriptor. </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
+
+
+
         <h3 id="opencensus.proto.metrics.v1.Point">Point</h3>
         <p>A timestamped measurement.</p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>timestamp</td>
                   <td><a href="#google.protobuf.Timestamp">google.protobuf.Timestamp</a></td>
@@ -1446,52 +1451,52 @@ described by http://unitsofmeasure.org/ucum.html. </p></td>
                   <td><p>The moment when this point was recorded. Inclusive.
 If not specified, the timestamp will be decided by the backend. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>int64_value</td>
                   <td><a href="#int64">int64</a></td>
                   <td></td>
                   <td><p>A 64-bit integer. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>double_value</td>
                   <td><a href="#double">double</a></td>
                   <td></td>
                   <td><p>A 64-bit double-precision floating-point number. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>distribution_value</td>
                   <td><a href="#opencensus.proto.metrics.v1.DistributionValue">DistributionValue</a></td>
                   <td></td>
                   <td><p>A distribution value. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>summary_value</td>
                   <td><a href="#opencensus.proto.metrics.v1.SummaryValue">SummaryValue</a></td>
                   <td></td>
                   <td><p>A summary value. This is not recommended, since it cannot be aggregated. </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
+
+
+
         <h3 id="opencensus.proto.metrics.v1.SummaryValue">SummaryValue</h3>
         <p>The start_timestamp only applies to the count and sum in the SummaryValue.</p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>count</td>
                   <td><a href="#google.protobuf.Int64Value">google.protobuf.Int64Value</a></td>
@@ -1499,7 +1504,7 @@ If not specified, the timestamp will be decided by the backend. </p></td>
                   <td><p>The total number of recorded values since start_time. Optional since
 some systems don&#39;t expose this. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>sum</td>
                   <td><a href="#google.protobuf.DoubleValue">google.protobuf.DoubleValue</a></td>
@@ -1508,31 +1513,31 @@ some systems don&#39;t expose this. </p></td>
 systems don&#39;t expose this. If count is zero then this field must be zero.
 This field must be unset if the sum is not available. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>snapshot</td>
                   <td><a href="#opencensus.proto.metrics.v1.SummaryValue.Snapshot">SummaryValue.Snapshot</a></td>
                   <td></td>
                   <td><p>Values calculated over an arbitrary time window. </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
+
+
+
         <h3 id="opencensus.proto.metrics.v1.SummaryValue.Snapshot">SummaryValue.Snapshot</h3>
         <p>The values in this message can be reset at arbitrary unknown times, with</p><p>the requirement that all of them are reset at the same time.</p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>count</td>
                   <td><a href="#google.protobuf.Int64Value">google.protobuf.Int64Value</a></td>
@@ -1540,7 +1545,7 @@ This field must be unset if the sum is not available. </p></td>
                   <td><p>The number of values in the snapshot. Optional since some systems don&#39;t
 expose this. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>sum</td>
                   <td><a href="#google.protobuf.DoubleValue">google.protobuf.DoubleValue</a></td>
@@ -1549,7 +1554,7 @@ expose this. </p></td>
 expose this. If count is zero then this field must be zero or not set
 (if not supported). </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>percentile_values</td>
                   <td><a href="#opencensus.proto.metrics.v1.SummaryValue.Snapshot.ValueAtPercentile">SummaryValue.Snapshot.ValueAtPercentile</a></td>
@@ -1557,24 +1562,24 @@ expose this. If count is zero then this field must be zero or not set
                   <td><p>A list of values at different percentiles of the distribution calculated
 from the current snapshot. The percentiles must be strictly increasing. </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
+
+
+
         <h3 id="opencensus.proto.metrics.v1.SummaryValue.Snapshot.ValueAtPercentile">SummaryValue.Snapshot.ValueAtPercentile</h3>
         <p>Represents the value at a given percentile of a distribution.</p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>percentile</td>
                   <td><a href="#double">double</a></td>
@@ -1582,31 +1587,31 @@ from the current snapshot. The percentiles must be strictly increasing. </p></td
                   <td><p>The percentile of a distribution. Must be in the interval
 (0.0, 100.0]. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>value</td>
                   <td><a href="#double">double</a></td>
                   <td></td>
                   <td><p>The value at the given percentile of a distribution. </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
+
+
+
         <h3 id="opencensus.proto.metrics.v1.TimeSeries">TimeSeries</h3>
         <p>A collection of data points that describes the time-varying values</p><p>of a metric.</p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>start_timestamp</td>
                   <td><a href="#google.protobuf.Timestamp">google.protobuf.Timestamp</a></td>
@@ -1616,7 +1621,7 @@ was reset to zero. Exclusive. The cumulative value is over the time interval
 (start_timestamp, timestamp]. If not specified, the backend can use the
 previous recorded value. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>label_values</td>
                   <td><a href="#opencensus.proto.metrics.v1.LabelValue">LabelValue</a></td>
@@ -1625,7 +1630,7 @@ previous recorded value. </p></td>
 all points. The order of label values must match that of label keys in the
 metric descriptor. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>points</td>
                   <td><a href="#opencensus.proto.metrics.v1.Point">Point</a></td>
@@ -1633,16 +1638,16 @@ metric descriptor. </p></td>
                   <td><p>The data points of this timeseries. Point.value type MUST match the
 MetricDescriptor.type. </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
 
-      
+
+
+
+
         <h3 id="opencensus.proto.metrics.v1.MetricDescriptor.Type">MetricDescriptor.Type</h3>
         <p>The kind of metric. It describes how the data is reported.</p><p>A gauge is an instantaneous measurement of a value.</p><p>A cumulative measurement is a value accumulated over a time interval. In</p><p>a time series, cumulative measurements should have the same start time,</p><p>increasing values and increasing end times, until an event resets the</p><p>cumulative value to zero and sets a new start time for the following</p><p>points.</p>
         <table class="enum-table">
@@ -1650,25 +1655,25 @@ MetricDescriptor.type. </p></td>
             <tr><td>Name</td><td>Number</td><td>Description</td></tr>
           </thead>
           <tbody>
-            
+
               <tr>
                 <td>UNSPECIFIED</td>
                 <td>0</td>
                 <td><p>Do not use this default value.</p></td>
               </tr>
-            
+
               <tr>
                 <td>GAUGE_INT64</td>
                 <td>1</td>
                 <td><p>Integer gauge. The value can go both up and down.</p></td>
               </tr>
-            
+
               <tr>
                 <td>GAUGE_DOUBLE</td>
                 <td>2</td>
                 <td><p>Floating point gauge. The value can go both up and down.</p></td>
               </tr>
-            
+
               <tr>
                 <td>GAUGE_DISTRIBUTION</td>
                 <td>3</td>
@@ -1677,14 +1682,14 @@ down. Recorded values are always &gt;= 0.
 Used in scenarios like a snapshot of time the current items in a queue
 have spent there.</p></td>
               </tr>
-            
+
               <tr>
                 <td>CUMULATIVE_INT64</td>
                 <td>4</td>
                 <td><p>Integer cumulative measurement. The value cannot decrease, if resets
 then the start_time should also be reset.</p></td>
               </tr>
-            
+
               <tr>
                 <td>CUMULATIVE_DOUBLE</td>
                 <td>5</td>
@@ -1692,14 +1697,14 @@ then the start_time should also be reset.</p></td>
 resets then the start_time should also be reset. Recorded values are
 always &gt;= 0.</p></td>
               </tr>
-            
+
               <tr>
                 <td>CUMULATIVE_DISTRIBUTION</td>
                 <td>6</td>
                 <td><p>Distribution cumulative measurement. The count and sum cannot decrease,
 if resets then the start_time should also be reset.</p></td>
               </tr>
-            
+
               <tr>
                 <td>SUMMARY</td>
                 <td>7</td>
@@ -1709,115 +1714,115 @@ also provides a total count of observations and a sum of all observed
 values, it calculates configurable percentiles over a sliding time
 window. This is not recommended, since it cannot be aggregated.</p></td>
               </tr>
-            
+
           </tbody>
         </table>
-      
 
-      
 
-      
-    
-      
+
+
+
+
+
       <div class="file-heading">
         <h2 id="opencensus/proto/resource/v1/resource.proto">opencensus/proto/resource/v1/resource.proto</h2><a href="#title">Top</a>
       </div>
       <p></p>
 
-      
+
         <h3 id="opencensus.proto.resource.v1.Resource">Resource</h3>
         <p>Resource information.</p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>type</td>
                   <td><a href="#string">string</a></td>
                   <td></td>
                   <td><p>Type identifier for the resource. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>labels</td>
                   <td><a href="#opencensus.proto.resource.v1.Resource.LabelsEntry">Resource.LabelsEntry</a></td>
                   <td>repeated</td>
                   <td><p>Set of labels that describe the resource. </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
+
+
+
         <h3 id="opencensus.proto.resource.v1.Resource.LabelsEntry">Resource.LabelsEntry</h3>
         <p></p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>key</td>
                   <td><a href="#string">string</a></td>
                   <td></td>
                   <td><p> </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>value</td>
                   <td><a href="#string">string</a></td>
                   <td></td>
                   <td><p> </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
 
-      
 
-      
 
-      
-    
-      
+
+
+
+
+
+
+
+
       <div class="file-heading">
         <h2 id="opencensus/proto/stats/v1/stats.proto">opencensus/proto/stats/v1/stats.proto</h2><a href="#title">Top</a>
       </div>
       <p></p>
 
-      
+
         <h3 id="opencensus.proto.stats.v1.CountAggregation">CountAggregation</h3>
         <p></p>
 
-        
 
-        
-      
+
+
+
         <h3 id="opencensus.proto.stats.v1.DistributionAggregation">DistributionAggregation</h3>
         <p></p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>bucket_bounds</td>
                   <td><a href="#double">double</a></td>
@@ -1841,31 +1846,31 @@ one element, there are no finite buckets, and that single element is the
 common boundary of the overflow and underflow buckets. The values must
 be monotonically increasing. </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
+
+
+
         <h3 id="opencensus.proto.stats.v1.LastValueAggregation">LastValueAggregation</h3>
         <p></p>
 
-        
 
-        
-      
+
+
+
         <h3 id="opencensus.proto.stats.v1.Measure">Measure</h3>
         <p>Measure .</p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>name</td>
                   <td><a href="#string">string</a></td>
@@ -1873,14 +1878,14 @@ be monotonically increasing. </p></td>
                   <td><p>A string by which the measure will be referred to, e.g. &#34;rpc_server_latency&#34;. Names MUST be
 unique within the library. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>description</td>
                   <td><a href="#string">string</a></td>
                   <td></td>
                   <td><p>Describes the measure, e.g. &#34;RPC latency in seconds&#34;. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>unit</td>
                   <td><a href="#string">string</a></td>
@@ -1888,59 +1893,59 @@ unique within the library. </p></td>
                   <td><p>Describes the unit used for the Measure. Follows the format described by
 http://unitsofmeasure.org/ucum.html. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>type</td>
                   <td><a href="#opencensus.proto.stats.v1.Measure.Type">Measure.Type</a></td>
                   <td></td>
                   <td><p>The type used for this Measure. </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
+
+
+
         <h3 id="opencensus.proto.stats.v1.Measurement">Measurement</h3>
         <p>Describes a data point to be collected for a Measure.</p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>tags</td>
                   <td><a href="#opencensus.proto.stats.v1.Tag">Tag</a></td>
                   <td>repeated</td>
                   <td><p> </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>measure_name</td>
                   <td><a href="#string">string</a></td>
                   <td></td>
                   <td><p>The name of the measure to which the value is applied. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>double_value</td>
                   <td><a href="#double">double</a></td>
                   <td></td>
                   <td><p> </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>int_value</td>
                   <td><a href="#int64">int64</a></td>
                   <td></td>
                   <td><p> </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>time</td>
                   <td><a href="#google.protobuf.Timestamp">google.protobuf.Timestamp</a></td>
@@ -1948,62 +1953,62 @@ http://unitsofmeasure.org/ucum.html. </p></td>
                   <td><p>The time when this measurement was recorded. If the implementation uses a async buffer to
 record measurements this may be the time when the measurement was read from the buffer. </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
+
+
+
         <h3 id="opencensus.proto.stats.v1.SumAggregation">SumAggregation</h3>
         <p></p>
 
-        
 
-        
-      
+
+
+
         <h3 id="opencensus.proto.stats.v1.Tag">Tag</h3>
         <p>TODO(bdrutu): Consider if this should be moved to a "tags" directory to match the API structure.</p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>key</td>
                   <td><a href="#string">string</a></td>
                   <td></td>
                   <td><p> </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>value</td>
                   <td><a href="#string">string</a></td>
                   <td></td>
                   <td><p> </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
+
+
+
         <h3 id="opencensus.proto.stats.v1.View">View</h3>
         <p></p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>name</td>
                   <td><a href="#string">string</a></td>
@@ -2011,21 +2016,21 @@ record measurements this may be the time when the measurement was read from the 
                   <td><p>A string by which the View will be referred to, e.g. &#34;rpc_latency&#34;. Names MUST be unique
 within the library. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>description</td>
                   <td><a href="#string">string</a></td>
                   <td></td>
                   <td><p>Describes the view, e.g. &#34;RPC latency distribution&#34; </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>measure</td>
                   <td><a href="#opencensus.proto.stats.v1.Measure">Measure</a></td>
                   <td></td>
                   <td><p>The Measure to which this view is applied. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>columns</td>
                   <td><a href="#string">string</a></td>
@@ -2034,21 +2039,21 @@ within the library. </p></td>
 individual stats will be aggregated (one aggregation per unique tag value). If none are
 provided, then all data is recorded in a single aggregation. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>count_aggregation</td>
                   <td><a href="#opencensus.proto.stats.v1.CountAggregation">CountAggregation</a></td>
                   <td></td>
                   <td><p>Counts the number of measurements recorded. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>sum_aggregation</td>
                   <td><a href="#opencensus.proto.stats.v1.SumAggregation">SumAggregation</a></td>
                   <td></td>
                   <td><p>Indicates that data collected and aggregated with this Aggregation will be summed up. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>last_value_aggregation</td>
                   <td><a href="#opencensus.proto.stats.v1.LastValueAggregation">LastValueAggregation</a></td>
@@ -2056,7 +2061,7 @@ provided, then all data is recorded in a single aggregation. </p></td>
                   <td><p>Indicates that data collected and aggregated with this Aggregation will represent the last
 recorded value. This is useful to support Gauges. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>distribution_aggregation</td>
                   <td><a href="#opencensus.proto.stats.v1.DistributionAggregation">DistributionAggregation</a></td>
@@ -2065,16 +2070,16 @@ recorded value. This is useful to support Gauges. </p></td>
 Aggregation may contain a histogram of the values in the population. User should define the
 bucket boundaries for that histogram (see DistributionAggregation). </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
 
-      
+
+
+
+
         <h3 id="opencensus.proto.stats.v1.Measure.Type">Measure.Type</h3>
         <p></p>
         <table class="enum-table">
@@ -2082,180 +2087,180 @@ bucket boundaries for that histogram (see DistributionAggregation). </p></td>
             <tr><td>Name</td><td>Number</td><td>Description</td></tr>
           </thead>
           <tbody>
-            
+
               <tr>
                 <td>TYPE_UNSPECIFIED</td>
                 <td>0</td>
                 <td><p>Unknown type.</p></td>
               </tr>
-            
+
               <tr>
                 <td>INT64</td>
                 <td>1</td>
                 <td><p>Indicates an int64 Measure.</p></td>
               </tr>
-            
+
               <tr>
                 <td>DOUBLE</td>
                 <td>2</td>
                 <td><p>Indicates a double Measure.</p></td>
               </tr>
-            
+
           </tbody>
         </table>
-      
 
-      
 
-      
-    
-      
+
+
+
+
+
       <div class="file-heading">
         <h2 id="opencensus/proto/trace/v1/trace_config.proto">opencensus/proto/trace/v1/trace_config.proto</h2><a href="#title">Top</a>
       </div>
       <p></p>
 
-      
+
         <h3 id="opencensus.proto.trace.v1.ConstantSampler">ConstantSampler</h3>
         <p>Sampler that always makes a constant decision on span sampling.</p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>decision</td>
                   <td><a href="#opencensus.proto.trace.v1.ConstantSampler.ConstantDecision">ConstantSampler.ConstantDecision</a></td>
                   <td></td>
                   <td><p> </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
+
+
+
         <h3 id="opencensus.proto.trace.v1.ProbabilitySampler">ProbabilitySampler</h3>
         <p>Sampler that tries to uniformly sample traces with a given probability.</p><p>The probability of sampling a trace is equal to that of the specified probability.</p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>samplingProbability</td>
                   <td><a href="#double">double</a></td>
                   <td></td>
                   <td><p>The desired probability of sampling. Must be within [0.0, 1.0]. </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
+
+
+
         <h3 id="opencensus.proto.trace.v1.RateLimitingSampler">RateLimitingSampler</h3>
         <p>Sampler that tries to sample with a rate per time window.</p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>qps</td>
                   <td><a href="#int64">int64</a></td>
                   <td></td>
                   <td><p>Rate per second. </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
+
+
+
         <h3 id="opencensus.proto.trace.v1.TraceConfig">TraceConfig</h3>
         <p>Global configuration of the trace service. All fields must be specified, or</p><p>the default (zero) values will be used for each type.</p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>probability_sampler</td>
                   <td><a href="#opencensus.proto.trace.v1.ProbabilitySampler">ProbabilitySampler</a></td>
                   <td></td>
                   <td><p> </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>constant_sampler</td>
                   <td><a href="#opencensus.proto.trace.v1.ConstantSampler">ConstantSampler</a></td>
                   <td></td>
                   <td><p> </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>rate_limiting_sampler</td>
                   <td><a href="#opencensus.proto.trace.v1.RateLimitingSampler">RateLimitingSampler</a></td>
                   <td></td>
                   <td><p> </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>max_number_of_attributes</td>
                   <td><a href="#int64">int64</a></td>
                   <td></td>
                   <td><p>The global default max number of attributes per span. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>max_number_of_annotations</td>
                   <td><a href="#int64">int64</a></td>
                   <td></td>
                   <td><p>The global default max number of annotation events per span. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>max_number_of_message_events</td>
                   <td><a href="#int64">int64</a></td>
                   <td></td>
                   <td><p>The global default max number of message events per span. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>max_number_of_links</td>
                   <td><a href="#int64">int64</a></td>
                   <td></td>
                   <td><p>The global default max number of link entries per span. </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
 
-      
+
+
+
+
         <h3 id="opencensus.proto.trace.v1.ConstantSampler.ConstantDecision">ConstantSampler.ConstantDecision</h3>
         <p>How spans should be sampled:</p><p>- Always off</p><p>- Always on</p><p>- Always follow the parent Span's decision (off if no parent).</p>
         <table class="enum-table">
@@ -2263,95 +2268,95 @@ bucket boundaries for that histogram (see DistributionAggregation). </p></td>
             <tr><td>Name</td><td>Number</td><td>Description</td></tr>
           </thead>
           <tbody>
-            
+
               <tr>
                 <td>ALWAYS_OFF</td>
                 <td>0</td>
                 <td><p></p></td>
               </tr>
-            
+
               <tr>
                 <td>ALWAYS_ON</td>
                 <td>1</td>
                 <td><p></p></td>
               </tr>
-            
+
               <tr>
                 <td>ALWAYS_PARENT</td>
                 <td>2</td>
                 <td><p></p></td>
               </tr>
-            
+
           </tbody>
         </table>
-      
 
-      
 
-      
-    
-      
+
+
+
+
+
       <div class="file-heading">
         <h2 id="opencensus/proto/trace/v1/trace.proto">opencensus/proto/trace/v1/trace.proto</h2><a href="#title">Top</a>
       </div>
       <p></p>
 
-      
+
         <h3 id="opencensus.proto.trace.v1.AttributeValue">AttributeValue</h3>
         <p>The value of an Attribute.</p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>string_value</td>
                   <td><a href="#opencensus.proto.trace.v1.TruncatableString">TruncatableString</a></td>
                   <td></td>
                   <td><p>A string up to 256 bytes long. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>int_value</td>
                   <td><a href="#int64">int64</a></td>
                   <td></td>
                   <td><p>A 64-bit signed integer. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>bool_value</td>
                   <td><a href="#bool">bool</a></td>
                   <td></td>
                   <td><p>A Boolean value represented by `true` or `false`. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>double_value</td>
                   <td><a href="#double">double</a></td>
                   <td></td>
                   <td><p>A double value. </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
+
+
+
         <h3 id="opencensus.proto.trace.v1.Module">Module</h3>
         <p>A description of a binary module.</p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>module</td>
                   <td><a href="#opencensus.proto.trace.v1.TruncatableString">TruncatableString</a></td>
@@ -2360,7 +2365,7 @@ bucket boundaries for that histogram (see DistributionAggregation). </p></td>
 For example: main binary, kernel modules, and dynamic libraries
 such as libc.so, sharedlib.so. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>build_id</td>
                   <td><a href="#opencensus.proto.trace.v1.TruncatableString">TruncatableString</a></td>
@@ -2368,24 +2373,24 @@ such as libc.so, sharedlib.so. </p></td>
                   <td><p>A unique identifier for the module, usually a hash of its
 contents. </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
+
+
+
         <h3 id="opencensus.proto.trace.v1.Span">Span</h3>
         <p>A span represents a single operation within a trace. Spans can be</p><p>nested to form a trace tree. Spans may also be linked to other spans</p><p>from the same or different trace. And form graphs. Often, a trace</p><p>contains a root span that describes the end-to-end latency, and one</p><p>or more subspans for its sub-operations. A trace can also contain</p><p>multiple root spans, or none at all. Spans do not need to be</p><p>contiguous - there may be gaps or overlaps between spans in a trace.</p><p>The next id is 17.</p><p>TODO(bdrutu): Add an example.</p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>trace_id</td>
                   <td><a href="#bytes">bytes</a></td>
@@ -2399,7 +2404,7 @@ random trace_id if empty or invalid trace_id was received.
 
 This field is required. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>span_id</td>
                   <td><a href="#bytes">bytes</a></td>
@@ -2413,14 +2418,14 @@ random span_id if empty or invalid span_id was received.
 
 This field is required. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>tracestate</td>
                   <td><a href="#opencensus.proto.trace.v1.Span.Tracestate">Span.Tracestate</a></td>
                   <td></td>
                   <td><p>The Tracestate on the span. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>parent_span_id</td>
                   <td><a href="#bytes">bytes</a></td>
@@ -2428,7 +2433,7 @@ This field is required. </p></td>
                   <td><p>The `span_id` of this span&#39;s parent span. If this is a root span, then this
 field must be empty. The ID is an 8-byte array. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>name</td>
                   <td><a href="#opencensus.proto.trace.v1.TruncatableString">TruncatableString</a></td>
@@ -2447,7 +2452,7 @@ receiver to fix the empty span name.
 
 This field is required. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>kind</td>
                   <td><a href="#opencensus.proto.trace.v1.Span.SpanKind">Span.SpanKind</a></td>
@@ -2456,7 +2461,7 @@ This field is required. </p></td>
 two spans with the same name may be distinguished using `CLIENT` (caller)
 and `SERVER` (callee) to identify queueing latency associated with the span. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>start_time</td>
                   <td><a href="#google.protobuf.Timestamp">google.protobuf.Timestamp</a></td>
@@ -2472,7 +2477,7 @@ keep end_time &gt; start_time for consistency.
 
 This field is required. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>end_time</td>
                   <td><a href="#google.protobuf.Timestamp">google.protobuf.Timestamp</a></td>
@@ -2487,35 +2492,35 @@ keep end_time &gt; start_time for consistency.
 
 This field is required. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>attributes</td>
                   <td><a href="#opencensus.proto.trace.v1.Span.Attributes">Span.Attributes</a></td>
                   <td></td>
                   <td><p>A set of attributes on the span. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>stack_trace</td>
                   <td><a href="#opencensus.proto.trace.v1.StackTrace">StackTrace</a></td>
                   <td></td>
                   <td><p>A stack trace captured at the start of the span. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>time_events</td>
                   <td><a href="#opencensus.proto.trace.v1.Span.TimeEvents">Span.TimeEvents</a></td>
                   <td></td>
                   <td><p>The included time events. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>links</td>
                   <td><a href="#opencensus.proto.trace.v1.Span.Links">Span.Links</a></td>
                   <td></td>
                   <td><p>The included links. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>status</td>
                   <td><a href="#opencensus.proto.trace.v1.Status">Status</a></td>
@@ -2524,16 +2529,16 @@ This field is required. </p></td>
 wasn&#39;t set it is means span ended without errors and assume
 Status.Ok (code = 0). </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>resource</td>
                   <td><a href="#opencensus.proto.resource.v1.Resource">opencensus.proto.resource.v1.Resource</a></td>
                   <td></td>
-                  <td><p>An optional resource that is associated with this span. If not set, this span 
-should be part of a batch that does include the resource information, unless resource 
+                  <td><p>An optional resource that is associated with this span. If not set, this span
+should be part of a batch that does include the resource information, unless resource
 information is unknown. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>same_process_as_parent_span</td>
                   <td><a href="#google.protobuf.BoolValue">google.protobuf.BoolValue</a></td>
@@ -2544,7 +2549,7 @@ to the same process as the current span. This flag is most commonly
 used to indicate the need to adjust time as clocks in different
 processes may not be synchronized. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>child_span_count</td>
                   <td><a href="#google.protobuf.UInt32Value">google.protobuf.UInt32Value</a></td>
@@ -2552,30 +2557,30 @@ processes may not be synchronized. </p></td>
                   <td><p>An optional number of child spans that were generated while this span
 was active. If set, allows an implementation to detect missing child spans. </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
+
+
+
         <h3 id="opencensus.proto.trace.v1.Span.Attributes">Span.Attributes</h3>
         <p>A set of attributes, each with a key and a value.</p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>attribute_map</td>
                   <td><a href="#opencensus.proto.trace.v1.Span.Attributes.AttributeMapEntry">Span.Attributes.AttributeMapEntry</a></td>
                   <td>repeated</td>
                   <td><p>The set of attributes. The value can be a string, an integer, a double
-or the Boolean values `true` or `false`. Note, global attributes like 
+or the Boolean values `true` or `false`. Note, global attributes like
 server name can be set as tags using resource API. Examples of attributes:
 
     &#34;/http/user_agent&#34;: &#34;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36&#34;
@@ -2583,7 +2588,7 @@ server name can be set as tags using resource API. Examples of attributes:
     &#34;abc.com/myattribute&#34;: true
     &#34;abc.com/score&#34;: 10.239 </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>dropped_attributes_count</td>
                   <td><a href="#int32">int32</a></td>
@@ -2592,115 +2597,115 @@ server name can be set as tags using resource API. Examples of attributes:
 because their keys are too long or because there are too many attributes.
 If this value is 0, then no attributes were dropped. </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
+
+
+
         <h3 id="opencensus.proto.trace.v1.Span.Attributes.AttributeMapEntry">Span.Attributes.AttributeMapEntry</h3>
         <p></p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>key</td>
                   <td><a href="#string">string</a></td>
                   <td></td>
                   <td><p> </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>value</td>
                   <td><a href="#opencensus.proto.trace.v1.AttributeValue">AttributeValue</a></td>
                   <td></td>
                   <td><p> </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
+
+
+
         <h3 id="opencensus.proto.trace.v1.Span.Link">Span.Link</h3>
         <p>A pointer from the current span to another span in the same trace or in a</p><p>different trace. For example, this can be used in batching operations,</p><p>where a single batch handler processes multiple requests from different</p><p>traces or when the handler receives a request from a different project.</p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>trace_id</td>
                   <td><a href="#bytes">bytes</a></td>
                   <td></td>
-                  <td><p>A unique identifier of a trace that this linked span is part of. The ID is a 
+                  <td><p>A unique identifier of a trace that this linked span is part of. The ID is a
 16-byte array. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>span_id</td>
                   <td><a href="#bytes">bytes</a></td>
                   <td></td>
                   <td><p>A unique identifier for the linked span. The ID is an 8-byte array. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>type</td>
                   <td><a href="#opencensus.proto.trace.v1.Span.Link.Type">Span.Link.Type</a></td>
                   <td></td>
                   <td><p>The relationship of the current span relative to the linked span. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>attributes</td>
                   <td><a href="#opencensus.proto.trace.v1.Span.Attributes">Span.Attributes</a></td>
                   <td></td>
                   <td><p>A set of attributes on the link. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>tracestate</td>
                   <td><a href="#opencensus.proto.trace.v1.Span.Tracestate">Span.Tracestate</a></td>
                   <td></td>
                   <td><p>The Tracestate associated with the link. </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
+
+
+
         <h3 id="opencensus.proto.trace.v1.Span.Links">Span.Links</h3>
         <p>A collection of links, which are references from this span to a span</p><p>in the same or different trace.</p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>link</td>
                   <td><a href="#opencensus.proto.trace.v1.Span.Link">Span.Link</a></td>
                   <td>repeated</td>
                   <td><p>A collection of links. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>dropped_links_count</td>
                   <td><a href="#int32">int32</a></td>
@@ -2708,93 +2713,93 @@ If this value is 0, then no attributes were dropped. </p></td>
                   <td><p>The number of dropped links after the maximum size was enforced. If
 this value is 0, then no links were dropped. </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
+
+
+
         <h3 id="opencensus.proto.trace.v1.Span.TimeEvent">Span.TimeEvent</h3>
         <p>A time-stamped annotation or message event in the Span.</p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>time</td>
                   <td><a href="#google.protobuf.Timestamp">google.protobuf.Timestamp</a></td>
                   <td></td>
                   <td><p>The time the event occurred. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>annotation</td>
                   <td><a href="#opencensus.proto.trace.v1.Span.TimeEvent.Annotation">Span.TimeEvent.Annotation</a></td>
                   <td></td>
                   <td><p>A text annotation with a set of attributes. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>message_event</td>
                   <td><a href="#opencensus.proto.trace.v1.Span.TimeEvent.MessageEvent">Span.TimeEvent.MessageEvent</a></td>
                   <td></td>
                   <td><p>An event describing a message sent/received between Spans. </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
+
+
+
         <h3 id="opencensus.proto.trace.v1.Span.TimeEvent.Annotation">Span.TimeEvent.Annotation</h3>
         <p>A text annotation with a set of attributes.</p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>description</td>
                   <td><a href="#opencensus.proto.trace.v1.TruncatableString">TruncatableString</a></td>
                   <td></td>
                   <td><p>A user-supplied message describing the event. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>attributes</td>
                   <td><a href="#opencensus.proto.trace.v1.Span.Attributes">Span.Attributes</a></td>
                   <td></td>
                   <td><p>A set of attributes on the annotation. </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
+
+
+
         <h3 id="opencensus.proto.trace.v1.Span.TimeEvent.MessageEvent">Span.TimeEvent.MessageEvent</h3>
         <p>An event describing a message sent/received between Spans.</p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>type</td>
                   <td><a href="#opencensus.proto.trace.v1.Span.TimeEvent.MessageEvent.Type">Span.TimeEvent.MessageEvent.Type</a></td>
@@ -2802,7 +2807,7 @@ this value is 0, then no links were dropped. </p></td>
                   <td><p>The type of MessageEvent. Indicates whether the message was sent or
 received. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>id</td>
                   <td><a href="#uint64">uint64</a></td>
@@ -2812,14 +2817,14 @@ SENT and RECEIVED MessageEvents. For example, this field could
 represent a sequence ID for a streaming RPC. It is recommended to be
 unique within a Span. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>uncompressed_size</td>
                   <td><a href="#uint64">uint64</a></td>
                   <td></td>
                   <td><p>The number of uncompressed bytes sent or received. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>compressed_size</td>
                   <td><a href="#uint64">uint64</a></td>
@@ -2827,31 +2832,31 @@ unique within a Span. </p></td>
                   <td><p>The number of compressed bytes sent or received. If zero, assumed to
 be the same size as uncompressed. </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
+
+
+
         <h3 id="opencensus.proto.trace.v1.Span.TimeEvents">Span.TimeEvents</h3>
         <p>A collection of `TimeEvent`s. A `TimeEvent` is a time-stamped annotation</p><p>on the span, consisting of either user-supplied key-value pairs, or</p><p>details of a message sent/received between Spans.</p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>time_event</td>
                   <td><a href="#opencensus.proto.trace.v1.Span.TimeEvent">Span.TimeEvent</a></td>
                   <td>repeated</td>
                   <td><p>A collection of `TimeEvent`s. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>dropped_annotations_count</td>
                   <td><a href="#int32">int32</a></td>
@@ -2859,7 +2864,7 @@ be the same size as uncompressed. </p></td>
                   <td><p>The number of dropped annotations in all the included time events.
 If the value is 0, then no annotations were dropped. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>dropped_message_events_count</td>
                   <td><a href="#int32">int32</a></td>
@@ -2867,48 +2872,48 @@ If the value is 0, then no annotations were dropped. </p></td>
                   <td><p>The number of dropped message events in all the included time events.
 If the value is 0, then no message events were dropped. </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
+
+
+
         <h3 id="opencensus.proto.trace.v1.Span.Tracestate">Span.Tracestate</h3>
         <p>This field conveys information about request position in multiple distributed tracing graphs.</p><p>It is a list of Tracestate.Entry with a maximum of 32 members in the list.</p><p>See the https://github.com/w3c/distributed-tracing for more details about this field.</p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>entries</td>
                   <td><a href="#opencensus.proto.trace.v1.Span.Tracestate.Entry">Span.Tracestate.Entry</a></td>
                   <td>repeated</td>
                   <td><p>A list of entries that represent the Tracestate. </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
+
+
+
         <h3 id="opencensus.proto.trace.v1.Span.Tracestate.Entry">Span.Tracestate.Entry</h3>
         <p></p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>key</td>
                   <td><a href="#string">string</a></td>
@@ -2917,7 +2922,7 @@ If the value is 0, then no message events were dropped. </p></td>
 lowercase letters &#39;a&#39;-&#39;z&#39;, digits &#39;0&#39;-&#39;9&#39;, underscores &#39;_&#39;, dashes
 &#39;-&#39;, asterisks &#39;*&#39;, and forward slashes &#39;/&#39;. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>value</td>
                   <td><a href="#string">string</a></td>
@@ -2926,31 +2931,31 @@ lowercase letters &#39;a&#39;-&#39;z&#39;, digits &#39;0&#39;-&#39;9&#39;, under
 RFC0020 characters (i.e., the range 0x20 to 0x7E) except &#39;,&#39; and &#39;=&#39;.
 Note that this also excludes tabs, newlines, carriage returns, etc. </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
+
+
+
         <h3 id="opencensus.proto.trace.v1.StackTrace">StackTrace</h3>
         <p>The call stack which originated this span.</p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>stack_frames</td>
                   <td><a href="#opencensus.proto.trace.v1.StackTrace.StackFrames">StackTrace.StackFrames</a></td>
                   <td></td>
                   <td><p>Stack frames in this stack trace. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>stack_trace_hash_id</td>
                   <td><a href="#uint64">uint64</a></td>
@@ -2968,24 +2973,24 @@ to that stack trace by setting only `stack_trace_hash_id`.
 TODO: describe how to deal with the case where stack_trace_hash_id is
 zero because it was not set. </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
+
+
+
         <h3 id="opencensus.proto.trace.v1.StackTrace.StackFrame">StackTrace.StackFrame</h3>
         <p>A single stack frame in a stack trace.</p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>function_name</td>
                   <td><a href="#opencensus.proto.trace.v1.TruncatableString">TruncatableString</a></td>
@@ -2993,7 +2998,7 @@ zero because it was not set. </p></td>
                   <td><p>The fully-qualified name that uniquely identifies the function or
 method that is active in this frame. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>original_function_name</td>
                   <td><a href="#opencensus.proto.trace.v1.TruncatableString">TruncatableString</a></td>
@@ -3002,21 +3007,21 @@ method that is active in this frame. </p></td>
 [mangled](http://www.avabodh.com/cxxin/namemangling.html). The name can
 be fully qualified. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>file_name</td>
                   <td><a href="#opencensus.proto.trace.v1.TruncatableString">TruncatableString</a></td>
                   <td></td>
                   <td><p>The name of the source file where the function call appears. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>line_number</td>
                   <td><a href="#int64">int64</a></td>
                   <td></td>
                   <td><p>The line number in `file_name` where the function call appears. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>column_number</td>
                   <td><a href="#int64">int64</a></td>
@@ -3024,45 +3029,45 @@ be fully qualified. </p></td>
                   <td><p>The column number where the function call appears, if available.
 This is important in JavaScript because of its anonymous functions. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>load_module</td>
                   <td><a href="#opencensus.proto.trace.v1.Module">Module</a></td>
                   <td></td>
                   <td><p>The binary module from where the code was loaded. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>source_version</td>
                   <td><a href="#opencensus.proto.trace.v1.TruncatableString">TruncatableString</a></td>
                   <td></td>
                   <td><p>The version of the deployed source code. </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
+
+
+
         <h3 id="opencensus.proto.trace.v1.StackTrace.StackFrames">StackTrace.StackFrames</h3>
         <p>A collection of stack frames, which can be truncated.</p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>frame</td>
                   <td><a href="#opencensus.proto.trace.v1.StackTrace.StackFrame">StackTrace.StackFrame</a></td>
                   <td>repeated</td>
                   <td><p>Stack frames in this call stack. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>dropped_frames_count</td>
                   <td><a href="#int32">int32</a></td>
@@ -3071,24 +3076,24 @@ This is important in JavaScript because of its anonymous functions. </p></td>
 were too many stack frames.
 If this value is 0, then no stack frames were dropped. </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
+
+
+
         <h3 id="opencensus.proto.trace.v1.Status">Status</h3>
         <p>The `Status` type defines a logical error model that is suitable for different</p><p>programming environments, including REST APIs and RPC APIs. This proto's fields</p><p>are a subset of those of</p><p>[google.rpc.Status](https://github.com/googleapis/googleapis/blob/master/google/rpc/status.proto),</p><p>which is used by [gRPC](https://github.com/grpc).</p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>code</td>
                   <td><a href="#int32">int32</a></td>
@@ -3096,31 +3101,31 @@ If this value is 0, then no stack frames were dropped. </p></td>
                   <td><p>The status code. This is optional field. It is safe to assume 0 (OK)
 when not set. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>message</td>
                   <td><a href="#string">string</a></td>
                   <td></td>
                   <td><p>A developer-facing error message, which should be in English. </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
+
+
+
         <h3 id="opencensus.proto.trace.v1.TruncatableString">TruncatableString</h3>
         <p>A string that might be shortened to a specified length.</p>
 
-        
+
           <table class="field-table">
             <thead>
               <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
             </thead>
             <tbody>
-              
+
                 <tr>
                   <td>value</td>
                   <td><a href="#string">string</a></td>
@@ -3132,7 +3137,7 @@ character boundary, to ensure that a truncated string is still valid UTF-8.
 Because it may contain multi-byte characters, the size of the truncated string
 may be less than the truncation limit. </p></td>
                 </tr>
-              
+
                 <tr>
                   <td>truncated_byte_count</td>
                   <td><a href="#int32">int32</a></td>
@@ -3140,16 +3145,16 @@ may be less than the truncation limit. </p></td>
                   <td><p>The number of bytes removed from the original string. If this
 value is 0, then the string was not shortened. </p></td>
                 </tr>
-              
+
             </tbody>
           </table>
 
-          
 
-        
-      
 
-      
+
+
+
+
         <h3 id="opencensus.proto.trace.v1.Span.Link.Type">Span.Link.Type</h3>
         <p>The relationship of the current span relative to the linked span: child,</p><p>parent, or unspecified.</p>
         <table class="enum-table">
@@ -3157,29 +3162,29 @@ value is 0, then the string was not shortened. </p></td>
             <tr><td>Name</td><td>Number</td><td>Description</td></tr>
           </thead>
           <tbody>
-            
+
               <tr>
                 <td>TYPE_UNSPECIFIED</td>
                 <td>0</td>
                 <td><p>The relationship of the two spans is unknown, or known but other
 than parent-child.</p></td>
               </tr>
-            
+
               <tr>
                 <td>CHILD_LINKED_SPAN</td>
                 <td>1</td>
                 <td><p>The linked span is a child of the current span.</p></td>
               </tr>
-            
+
               <tr>
                 <td>PARENT_LINKED_SPAN</td>
                 <td>2</td>
                 <td><p>The linked span is a parent of the current span.</p></td>
               </tr>
-            
+
           </tbody>
         </table>
-      
+
         <h3 id="opencensus.proto.trace.v1.Span.SpanKind">Span.SpanKind</h3>
         <p>Type of span. Can be used to specify additional relationships between spans</p><p>in addition to a parent/child relationship.</p>
         <table class="enum-table">
@@ -3187,30 +3192,30 @@ than parent-child.</p></td>
             <tr><td>Name</td><td>Number</td><td>Description</td></tr>
           </thead>
           <tbody>
-            
+
               <tr>
                 <td>SPAN_KIND_UNSPECIFIED</td>
                 <td>0</td>
                 <td><p>Unspecified.</p></td>
               </tr>
-            
+
               <tr>
                 <td>SERVER</td>
                 <td>1</td>
                 <td><p>Indicates that the span covers server-side handling of an RPC or other
 remote network request.</p></td>
               </tr>
-            
+
               <tr>
                 <td>CLIENT</td>
                 <td>2</td>
                 <td><p>Indicates that the span covers the client-side wrapper around an RPC or
 other remote request.</p></td>
               </tr>
-            
+
           </tbody>
         </table>
-      
+
         <h3 id="opencensus.proto.trace.v1.Span.TimeEvent.MessageEvent.Type">Span.TimeEvent.MessageEvent.Type</h3>
         <p>Indicates whether the message was sent or received.</p>
         <table class="enum-table">
@@ -3218,33 +3223,33 @@ other remote request.</p></td>
             <tr><td>Name</td><td>Number</td><td>Description</td></tr>
           </thead>
           <tbody>
-            
+
               <tr>
                 <td>TYPE_UNSPECIFIED</td>
                 <td>0</td>
                 <td><p>Unknown event type.</p></td>
               </tr>
-            
+
               <tr>
                 <td>SENT</td>
                 <td>1</td>
                 <td><p>Indicates a sent message.</p></td>
               </tr>
-            
+
               <tr>
                 <td>RECEIVED</td>
                 <td>2</td>
                 <td><p>Indicates a received message.</p></td>
               </tr>
-            
+
           </tbody>
         </table>
-      
 
-      
 
-      
-    
+
+
+
+
 
     <h2 id="scalar-value-types">Scalar Value Types</h2>
     <table class="scalar-value-types-table">
@@ -3252,7 +3257,7 @@ other remote request.</p></td>
         <tr><td>.proto Type</td><td>Notes</td><td>C++ Type</td><td>Java Type</td><td>Python Type</td></tr>
       </thead>
       <tbody>
-        
+
           <tr id="double">
             <td>double</td>
             <td></td>
@@ -3260,7 +3265,7 @@ other remote request.</p></td>
             <td>double</td>
             <td>float</td>
           </tr>
-        
+
           <tr id="float">
             <td>float</td>
             <td></td>
@@ -3268,7 +3273,7 @@ other remote request.</p></td>
             <td>float</td>
             <td>float</td>
           </tr>
-        
+
           <tr id="int32">
             <td>int32</td>
             <td>Uses variable-length encoding. Inefficient for encoding negative numbers – if your field is likely to have negative values, use sint32 instead.</td>
@@ -3276,7 +3281,7 @@ other remote request.</p></td>
             <td>int</td>
             <td>int</td>
           </tr>
-        
+
           <tr id="int64">
             <td>int64</td>
             <td>Uses variable-length encoding. Inefficient for encoding negative numbers – if your field is likely to have negative values, use sint64 instead.</td>
@@ -3284,7 +3289,7 @@ other remote request.</p></td>
             <td>long</td>
             <td>int/long</td>
           </tr>
-        
+
           <tr id="uint32">
             <td>uint32</td>
             <td>Uses variable-length encoding.</td>
@@ -3292,7 +3297,7 @@ other remote request.</p></td>
             <td>int</td>
             <td>int/long</td>
           </tr>
-        
+
           <tr id="uint64">
             <td>uint64</td>
             <td>Uses variable-length encoding.</td>
@@ -3300,7 +3305,7 @@ other remote request.</p></td>
             <td>long</td>
             <td>int/long</td>
           </tr>
-        
+
           <tr id="sint32">
             <td>sint32</td>
             <td>Uses variable-length encoding. Signed int value. These more efficiently encode negative numbers than regular int32s.</td>
@@ -3308,7 +3313,7 @@ other remote request.</p></td>
             <td>int</td>
             <td>int</td>
           </tr>
-        
+
           <tr id="sint64">
             <td>sint64</td>
             <td>Uses variable-length encoding. Signed int value. These more efficiently encode negative numbers than regular int64s.</td>
@@ -3316,7 +3321,7 @@ other remote request.</p></td>
             <td>long</td>
             <td>int/long</td>
           </tr>
-        
+
           <tr id="fixed32">
             <td>fixed32</td>
             <td>Always four bytes. More efficient than uint32 if values are often greater than 2^28.</td>
@@ -3324,7 +3329,7 @@ other remote request.</p></td>
             <td>int</td>
             <td>int</td>
           </tr>
-        
+
           <tr id="fixed64">
             <td>fixed64</td>
             <td>Always eight bytes. More efficient than uint64 if values are often greater than 2^56.</td>
@@ -3332,7 +3337,7 @@ other remote request.</p></td>
             <td>long</td>
             <td>int/long</td>
           </tr>
-        
+
           <tr id="sfixed32">
             <td>sfixed32</td>
             <td>Always four bytes.</td>
@@ -3340,7 +3345,7 @@ other remote request.</p></td>
             <td>int</td>
             <td>int</td>
           </tr>
-        
+
           <tr id="sfixed64">
             <td>sfixed64</td>
             <td>Always eight bytes.</td>
@@ -3348,7 +3353,7 @@ other remote request.</p></td>
             <td>long</td>
             <td>int/long</td>
           </tr>
-        
+
           <tr id="bool">
             <td>bool</td>
             <td></td>
@@ -3356,7 +3361,7 @@ other remote request.</p></td>
             <td>boolean</td>
             <td>boolean</td>
           </tr>
-        
+
           <tr id="string">
             <td>string</td>
             <td>A string must always contain UTF-8 encoded or 7-bit ASCII text.</td>
@@ -3364,7 +3369,7 @@ other remote request.</p></td>
             <td>String</td>
             <td>str/unicode</td>
           </tr>
-        
+
           <tr id="bytes">
             <td>bytes</td>
             <td>May contain any arbitrary sequence of bytes.</td>
@@ -3372,7 +3377,7 @@ other remote request.</p></td>
             <td>ByteString</td>
             <td>str</td>
           </tr>
-        
+
       </tbody>
     </table>
   </body>
